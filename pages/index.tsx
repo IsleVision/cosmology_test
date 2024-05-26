@@ -1,11 +1,10 @@
-import { Divider } from "@interchain-ui/react";
-import { Layout, Wallet } from "@/components";
+import { Layout, AssetsOverview } from "@/components";
+import { selectedChain  } from "@/config/mock_assets";
 
 export default function Home() {
   return (
     <Layout>
-      <Wallet />
-      <Divider mb="$16" />
+      <AssetsOverview selectedChainName={selectedChain}></AssetsOverview>
     </Layout>
   );
 }
